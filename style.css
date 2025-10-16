@@ -43,7 +43,7 @@
      --fontSize-paragraph:clamp(0.813rem, 2vw + 1rem, 1rem); /* 13-16 pixel  https://modern-fluid-typography.vercel.app/ */
      --fontSize-anchortag:clamp(0.813rem, 2vw + 1rem, 1rem); /* 13-16 pixel  https://modern-fluid-typography.vercel.app/ */
      --fontSize-small:clamp(0.75rem, 2vw + 1rem, 0.813rem); /* 12-13 pixel  https://modern-fluid-typography.vercel.app/ */
-
+     --fontSize-extrasmall:clamp(0.5rem, 1.2vw + 0.5rem, 0.75rem);
      /* radius  */
 
      --borderRadius:0.7rem;
@@ -51,23 +51,34 @@
 
      /* spacing  */
 
-     --vertical-padding:1rem;
-     --horizontal-padding:1.5rem;
-     --vertical-inner-padding:0.5rem;
-     --horizontal-inner-padding:0.7rem;
+     --large-spacing:3rem;
+     --medium-spacing:2rem;
+     --small-spacing:1rem;
+     --horizontal-spacing:0.7rem 0;
+     --horizontal-spacing-small:0.3rem 0;
+     --vertical-spacing:0 1.5rem;
+     --vertical-spacing-small:0 1.1rem;
+  
 
      /* button spacing  */
 
-     --button-vertical-padding:0.7rem;
-     --button-horizontal-padding:1.6 rem;
+     --button-spacing:0.7rem;
+     --button-vertical-spacing:0.7rem;
+     --button-horizontal-spacing:1.6 rem;
 
 }
+
+/* body  */
+
 body{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 100vh;
 }
+
+/* heading */
+
 h1{
     font-size: var(--fontSize-h1);
 }
@@ -86,20 +97,110 @@ h5{
 h6{
     font-size: var(--fontSize-h6);
 }
+
+/* paragraph  */
+
 p{
-    font-size: var(--fontSize-paragraph);
+    font-size: var(--fontFamily-paragraph);
 }
+
+/* anchor  */
+
 a{
     font-size: var(--fontSize-anchortag);
     color:black;
 }
-.section{
-    background-color: aqua;
-    padding: var(--vertical-padding) var(--horizontal-padding);
-    border-radius: var(--borderRadius-button);
+
+/* sidebar  */
+
+.sidebar_container{
+    min-width: 18%;
+    min-height: 100dvh;
+    background-color:  #f3ebf5;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* align-items: center; */
+    padding: var(--small-spacing);
 }
-.btn{
-    padding: var(--button-vertical-padding) var(--button-horizontal-padding);
-    background-color: beige;
-    border-radius: var(--borderRadius-button);
+.logo_container{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    /* background-color: aqua; */
+    /* padding: 0; */
+    gap: 0.7rem;
+}
+.logo_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 2rem;
+    max-height: 2rem;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    /* background-color: #DCCFC0; */
+}
+.company_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #A2AF9B; */
+}
+
+/* main  */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: left; 
+    align-items: center;
+    padding: var(--horizontal-spacing);
+    /* background-color: rgb(160, 141, 177); */
+    /* border-bottom: 0.1rem solid black; */
+}
+.sidebar_navigation_container{
+    min-width:100%;
+}
+.sidebar_navigation{
+    min-width: 100%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    gap: 1rem;
+    padding: 12px 0;
+    margin: 2px 0;
+    /* background-color: bisque; */
+    border-radius: var(--borderRadius);
+}
+.sidebar_navigation_container :hover{
+    background-color: aqua;
+}
+.sidebar_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    /* background-color: aqua; */
+}
+.sidebar_navigation_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #EEEEEE; */
+}
+.subheading{
+    min-width: 100%;
+    display: flex;
+    justify-content:left;
+    align-items: start;
+    border-bottom: 0.1rem solid black;
+    /* background-color: aqua; */
+     padding: 0.3rem 0;
+}
+.subheading p{
+     font-size: var(--fontSize-extrasmall);
+    
 }

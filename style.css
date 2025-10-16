@@ -116,7 +116,9 @@ a{
 .sidebar_container{
     min-width: 18%;
     min-height: 100dvh;
-    background-color:  #f3ebf5;
+    /* background-color:  #f3ebf5; */
+    background: #e0deba;
+    background: linear-gradient(90deg, rgba(224, 222, 186, 1) 0%, rgba(222, 212, 184, 1) 35%, rgba(129, 155, 166, 1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -176,7 +178,7 @@ a{
     border-radius: var(--borderRadius);
 }
 .sidebar_navigation_container :hover{
-    background-color: aqua;
+    background-color:#819BA6;
 }
 .sidebar_icon{
     display: flex;

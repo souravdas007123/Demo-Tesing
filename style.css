@@ -191,6 +191,8 @@ a{
 }
 .sidebar_navigation_container{
     min-width:100%;
+    border-radius: var(--borderRadius);
+    /* background-color: #DCCFC0; */
 }
 .sidebar_navigation{
     min-width: 100%;

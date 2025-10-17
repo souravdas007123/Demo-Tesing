@@ -134,7 +134,8 @@ a{
 .sidebar_toggle_icon{
     padding: 15px 12px;
     border-radius: var(--borderRadius);
-    /* background-color: aqua; */
+    /* background-color: #819BA6; */
+    /* color: #819BA6; */
 }
 .sidebar_toggle :hover{
     background-color: #819BA6;

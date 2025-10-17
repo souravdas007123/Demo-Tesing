@@ -191,6 +191,9 @@ a{
 }
 .sidebar_navigation_container{
     min-width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: var(--borderRadius);
     /* background-color: #DCCFC0; */
 }
@@ -204,6 +207,12 @@ a{
     margin: 2px 0;
     /* background-color: bisque; */
     border-radius: var(--borderRadius);
+}
+.crown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
 }
 .upgrade{
     border-radius: var(--borderRadius);
